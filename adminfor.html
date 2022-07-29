@@ -1,0 +1,111 @@
+<html>
+<head>
+<style>
+body{
+	margin:0px;
+	padding:0px;
+	background:url(admin1.jpg);
+	background-size:cover;
+	background-position:center;
+	font-family: sans-serif;
+}
+.loginbox{
+	width:320px;
+	height:420px;
+	background:Lightblue;
+	color:#fff;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing:border-box;
+	padding-bottom: 90px;
+	padding:30px 50px;
+	border-radius:5px;
+}
+.avatar{
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:-50px;
+	left:calc(50% - 50px);
+}
+.avatar:hover{
+	width:120px;
+	height:120px;
+	left:calc(50% - 60px);
+	transition:all 0.5s ease;
+}
+h1{
+	margin:0px;
+	padding:0px 0px 20x;
+	text-align:center;
+	font-size:22px;
+	color: rgb(244, 113, 13);
+}
+.loginbox p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color: rgb(244, 113, 13);
+}
+.loginbox input{
+	width:100%;
+	margin-bottom:20px;
+}
+.loginbox input[type="text"],input[type="password"]{
+	border:none;
+	border-bottom:1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+.loginbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	color:#fff;
+	font-size:18px;
+	border-radius:20px;
+}
+.loginbox input[type="submit"]:hover{
+	cursor:pointer;
+	border:2px solid #fb2525;
+	background:transparent;
+	color:#fb2525;
+}
+.loginbox a{
+	text-decoration:none;
+	font-size:12px;
+	line-height:20px;
+	color:rgb(248, 23, 23);
+}
+.loginbox a:hover{
+	color:#ffc107;
+}
+</style>
+</head>
+<body>
+
+	<div class="loginbox">
+		<img src="https://www.pngkey.com/png/detail/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png" class="avatar">
+			<h1><br>Forgot  Password for admin <br>welcome all<br><br></h1>
+				<form action="adminfor.jsp">
+					<p>Email Id:</P>
+					<input type="text" placeholder="Enter User Name" required="required" name="email">
+					<p> Create new Password:</P>
+					<input type="password" placeholder="Enter password" required="required" name="new_pass1">
+                    <p> Conform Password:</P>
+                        <input type="password" placeholder="Enter password" required="required" name="new_pass2">
+					<input type="submit" value="Conform">
+					<center><a href="adminlogin.html" >Back to login page</a></center><br>
+					
+				</form>
+	</div>
+
+</body>
+</html>

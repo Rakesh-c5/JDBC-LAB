@@ -1,0 +1,477 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <title>front end design for YouTube </title>
+        <link rel="stylesheet" href="project.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+     <style>
+
+
+
+
+
+
+/* The Modal (background) */
+.modaldiv {
+    display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 20%; /* Full width */
+  height: 350px; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+ border: 2px solid #888;
+ background: #fff;
+  margin-top: 4%;
+  margin-left: 75%;
+  margin-right: 50%;
+  border-radius: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fcfcfc;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on 0screen size */
+}
+
+
+
+
+
+.modaldiv hr{
+  width:80%;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.loginfo{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+.loginfo p{
+   padding-left: 10px;
+    padding-bottom: 20px;
+   
+}
+.imgcontainer1 {
+  text-align: center;
+  margin-right: 10px;
+    margin-left: 10px;  
+    margin-top: 10px;
+  position: relative;
+  background-color:antiquewhite;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+img.avatar {
+  width:60px;
+    border-radius: 90%;
+    
+
+}
+
+.aboutuser{
+    width: 0%;
+    height: 0%;
+}
+.about{
+    width: 100%;
+    height: 100%;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+    </head>
+    
+    <body>
+        
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+                <img src="images/menu.png" class="menu-icon">
+                <img src="images/logo.png" class="logo">
+            </div>
+            <div class="nav-middle flex-div">
+                <div class="search-box flex-div">
+                    <input type="text" placeholder="Search">
+                    <img src="images/search.png" alt="search">
+                </div>
+                <img src="images/voice-search.png" alt="vo" class="mic-icon">
+            </div>
+            <div class="nav-right flex-div">
+                <img src="images/upload.png" alt="up">
+                <img src="images/more.png" alt="">
+                <img src="images/notification.png" alt="">
+                <button style="border: 0; background-color: #fff;"onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="images/Jack.png" class="user-icon"></button>
+              
+            </div>
+
+         
+           
+        </nav>
+
+
+        <div id="id01" class="modaldiv">
+                <br>
+                <div class="imgcontainer1">
+                    <img src="images/Jack.png" alt="Avatar" class="avatar">
+                
+                   
+                        <font size="2" color="blue"><br>Admin<br>admin@gmail.com<br></font><br>
+                  </div>
+        
+                            <div class="sub1">
+                                <font size="3" color="blue"><center>  <P class="intro1">Admin Details </P><br></center></font>
+                                  <hr>
+                              </div>
+                              <div class="sub1">
+                                <font size="3" color=blue><center>  <P class="intro2">Settings</P><br></center></font>
+                                 <hr>
+                              </div>
+                              <div class="sub1">
+                                <font size="3" color=blue><center>  <P ><a href="login.html">Logout</a></P><br></center></font>
+                                 
+                              </div>
+                            </div>
+        
+                        </div>
+         </div>
+
+         
+          <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+           
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              
+              }
+             
+            }
+            </script>          
+        <div class="aboutuser" style="background-color: red;">
+
+        </div>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-----------sidebar--->
+        <div class="sidebar">
+            <div class="shortcut_links">
+                <a href=""><img src="images/home.png" alt=""><p>Home</p></a>
+                <a href=""><img src="images/explore.png" alt=""><p>Explore</p></a>
+                <a href=""><img src="images/subscriprion.png" alt=""><p>Subscription</p></a>
+                <hr class="aaa hh">
+                <br>
+                <a href=""><img src="images/library.png" alt=""><p>Library</p></a>
+                <a href=""><img src="images/history.png" alt=""><p>History</p></a>
+                <hr>
+                <h3 class="sub1">BEST OF YOUTUBE</h3>
+
+                <a href=""><img src="images/music-sign.png" alt=""><p>Music</p></a>
+                <a href=""><img src="images/offside-flag.png" alt=""><p>Sports</p></a>
+                <a href=""><img src="images/news-advertisement.png" alt=""><p>News</p></a>
+                <a href=""><img src="images/live-broadcasting.png" alt=""><p>Live</p></a>
+                <a href=""><img src="images/shopping-bag.png" alt=""><p>Fashion and Beauty</p></a>
+                <a href=""><img src="images/learning.png" alt=""><p>Learing</p></a>
+                <a href=""><img src="images/playlist.png" alt=""><p>Play List</p></a>
+                <a href=""><img src="images/messages.png" alt=""><p>Messages</p></a>
+                <a href=""><img src="images/show-more.png" alt=""><p>Show More</p></a>
+
+                <hr class="hh">
+            </div>
+            <div class="sub">
+                <h3>SUBSCRIBED</h3>
+                <a href=""><img src="images/Jack.png" alt=""><p>20761A0583</p></a>
+                <a href=""><img src="images/simon.png" alt=""><p>20761A05C5</p></a>
+                <a href=""><img src="images/tom.png" alt=""><p>20761A05B8</p></a>
+                <a href=""><img src="images/megan.png" alt=""><p>20761A0571</p></a>
+                <a href=""><img src="images/cameron.png" alt=""><p>20761A05C7</p></a>
+                <a href=""><img src="images/Jack.png" alt=""><p>20761A05C6</p></a>
+                <a href=""><img src="images/simon.png" alt=""><p>20761A05C1</p></a>
+                <a href=""><img src="images/tom.png" alt=""><p>20761A0582</p></a>
+                <a href=""><img src="images/megan.png" alt=""><p>20761A0578</p></a>
+                <a href=""><img src="images/cameron.png" alt=""><p>20761A0576</p></a>
+                <a href=""><img src="images/show-more.png" alt="" class="shortcut_links"><p>Show More</p></a>
+            </div>
+        </div>
+     <!-- ----------main------------>   
+    <div class="container">
+        
+        <div class="banner">
+            <img src="images/banner.png" alt="">
+        </div>
+        
+        <div class="list-container">
+
+        
+
+            <div class="vid-list">
+                <a href="p4.html"><img src="images/l.jfif " height=212px style="padding-bottom: 2px;" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/tom.png" alt="">
+                        <div class="vid-info">
+                            <a href="p4.html">LBRCE,Mylavaram</a>
+                            <p>Kumar Sai channel</p>
+                            <p>150k views &bull; 12 days</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="p4.html"><img src="images/thumbnail12.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/megan.png" alt="">
+                        <div class="vid-info">
+                            <a href="p4.html">News Related to Great LBRCE</a>
+                            <p>Sameer channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play2.html"><img src="images/thumbnail10.jpg" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/simon.png" alt="">
+                        <div class="vid-info">
+                            <a href="play2.html">Great Friends at LBRCE,Mylavaram 9:37Pm </a>
+                            <p>Pavan Ganesh channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="play-video.html"><img src="images/rr.jfif" height=220px class="thumbnail" style="width:280px;height:200px"></a>
+                <div class="flex-div">
+                        <img src="images/Jack.png" alt="">
+                        <div class="vid-info">
+                            <a href="play-video.html">Creating a video with an animation</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views  &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="play3.html"><img src="images/thumbnail1.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/cameron.png" alt="">
+                        <div class="vid-info">
+                            <a href="play3.html">Nature Lover</a>
+                            <p>Sai Teja  channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+            
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail2.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/megan.png" alt="">
+                        <div class="vid-info">
+                            <a href="">Fight aganist Freedom</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail3.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/Jack.png" alt="">
+                        <div class="vid-info">
+                            <a href="">Foreign Countries travelling</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail4.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/rr.jfif" alt="">
+                        <div class="vid-info">
+                            <a href="">Nothern Countries</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views&bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail5.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/megan.png" alt="">
+                        <div class="vid-info">
+                            <a href="">Best channel to learn codings that help to a web developer</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views&bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="play-video.html"><img src="images/rr.jfif" height=220px class="thumbnail" style="width:280px;height:160px"></a>
+                <div class="flex-div">
+                        <img src="images/Jack.png" alt="">
+                        <div class="vid-info">
+                            <a href="play-video.html">Creating a video with an animation</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views  &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail6.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/rr.jfif" alt="">
+                        <div class="vid-info">
+                            <a href="">Best channel to learn codings that help to a web developer</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views &bull;2 days</p>
+                        </div>
+                </div>
+            </div>
+
+
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail2.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/megan.png" alt="">
+                        <div class="vid-info">
+                            <a href="">Fight aganist Freedom</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail3.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/Jack.png" alt="">
+                        <div class="vid-info">
+                            <a href="">Foreign Countries travelling</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail4.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/rr.jfif" alt="">
+                        <div class="vid-info">
+                            <a href="">Nothern Countries</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views&bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail7.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/Jack.png" alt="">
+                        <div class="vid-info">
+                            <a href="">Best channel to learn codings that help to a web developer</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="vid-list">
+                <a href=""><img src="images/thumbnail8.png" class="thumbnail"></a>
+                <div class="flex-div">
+                        <img src="images/Jack.png" alt="">
+                        <div class="vid-info">
+                            <a href="">Best channel to learn codings that help to a web developer</a>
+                            <p>Ravi Learning channel</p>
+                            <p>15k views &bull; 2 days</p>
+                        </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+     <script src="script.js"></script>   
+     
+    </body>
+</html>
